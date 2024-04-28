@@ -1,0 +1,498 @@
+/* styles.css */
+@font-face {
+    font-family: 'Antipasto';
+    src: url('../fonts/antipasto/Antipasto-Pro-Regular-trial.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gloria-Hallelujah';
+    src: url('../fonts/gloria_hallelujah/gloriahallelujah.ttf') format('truetype');
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Antipasto', sans-serif, serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, white, rgb(182, 182, 196)); /* Degradado blanco hacia el color de fondo actual */
+}
+.body-plus-1 {
+    height: 1152px;
+}
+.form-container {
+    width: 425px;
+    height: 652px;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+}
+.form-container-1 {
+    width: 425px;
+    height: 972px;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+}
+.form-container-2 {
+    width: 30%;
+    height: 95%;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+}
+.form-header {
+    margin-top: 20%;
+    width: 100%;
+    margin-bottom: 15%;
+    display: flex;
+    justify-content: center;
+}
+.form-header {
+    margin-top: 20%;
+    width: 100%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #888;
+}
+
+.input-container input:focus {
+    border-color: #6c63ff;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+.button-container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.custom-button {
+    width: 150px;
+    height: 50px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #564fc7;
+}
+
+header {
+    height: 15vh;
+    width: 100vw;
+    background-color: rgb(54, 89, 105);
+}
+main {
+    height: 65vh;
+    width: 100vw;
+}
+footer {
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(21, 34, 40);
+}
+.row {
+    display: flex;
+}
+.height {
+    height: 100%;
+}
+.height-1 {
+    height: 50%;
+}
+.height-2 {
+    height: 30%;
+}
+.height-3 {
+    height: 70%;
+}
+.height-4 {
+    height: 85vh;
+}
+.height-6 {
+    height: 95%;
+}
+.height-5 {
+    height: 20vw;
+}
+.height-7 {
+    height: 10vh;
+}
+.col {
+    width: 100%;
+}
+.col-1 {
+    width: 30%;
+}
+.col-2 {
+    width: 70%;
+}
+.col-3 {
+    width: 10%;
+}
+.col-4 {
+    width: 80%;
+}
+.col-5 {
+    width: 20%;
+}
+.col-6 {
+    width: 60%;
+}
+.col-7 {
+    width: 20vw;
+}
+.col-8 {
+    width: 95%;
+}
+.col-9 {
+    width: 50%;
+}
+.container-1 {
+    width: 21vh;
+    height: 18vh;
+    background-color: rgb(54, 89, 105);
+}
+.container-2 {
+    width: 90%;
+    height: 90%;
+}
+.border-1 {
+    border: 2px solid rgba(149, 255, 250, 0.462);
+}
+.border-2 {
+    border: 2px solid rgba(0, 0, 0, 0.462);
+}
+.border-3 {
+    border: 0.2vh dotted black;
+}
+.border-radius-1 {
+    border-radius: 10px;
+}
+.border-radius-2 {
+    border-radius: 50%;
+}
+.border-radius-3 {
+    border-radius: 20px;
+}
+.margin-l-r-1 {
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+}
+/* Clase de efecto hover */
+.hover-effect {
+    transition: transform 0.3s ease; /* Transición suave en el hover */
+    transform-origin: center center;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05); /* Escala el elemento al 110% en el hover */
+    /* Puedes agregar otros estilos según tus preferencias */
+}
+/* Estilos para cuando el cursor pasa sobre los cursos */
+.hover-effect-2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efecto de sombra para oscurecer */
+    background-color: #0000002c;
+}
+
+/* Estilos para mostrar el nombre del autor al pasar el cursor */
+.hover-effect-2:hover::after {
+    content: attr(data-author); /* Mostrar el nombre del autor */
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo del texto */
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.border-l-r-1 {
+    border-right: 0.2vh dotted black; /* Borde derecho */
+        /* O */
+    border-left: 0.2vh dotted black; /* Borde izquierdo */
+}
+.icon-1 {
+    height: 50px;
+    width: 50px;
+}
+.icon-2 {
+    height: 40px;
+    width: 40px;
+}
+.icon-3 {
+    height: 60px;
+    width: 60px;
+}
+.column {
+    flex-direction: column;
+}
+.bg-1 {
+    background-color: #f9f9f9;
+}
+.bg-2 {
+    background-color: #34181822;
+}
+.c-1 {
+    color: #000000;
+}
+.text-decoration-1 {
+    text-decoration: none;
+}
+.container-text {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    height: 30%;
+    background-color: #f9f9f9;
+}
+.textarea-1 {
+    width: 80%; /* Ancho del textarea */
+    height: 100%; /* Altura del textarea */
+    padding: 10px; /* Espaciado interno */
+    border: 2px solid #ccc; /* Borde */
+    border-radius: 10px; /* Radio de borde */
+    font-size: 16px; /* Tamaño de fuente */
+    resize: none; /* Evita que el usuario cambie el tamaño */
+    outline: none; /* Quita el contorno al enfocar */
+}
+
+.textarea-1::placeholder {
+    color: #888; /* Color del texto de marcador de posición */
+}
+
+.textarea-1:focus {
+    border-color: #6c63ff; /* Cambia el color del borde al enfocar */
+}
+.overflow-1 {
+    overflow-y: scroll;
+}
+/*li*/
+ul {
+	list-style-position: inside;
+	width: 100%;
+	background: white;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+	padding: 0;
+	margin: 0;
+	border-radius: 0.1rem;
+}
+
+li {
+	padding: 0 0 0 1rem;
+    font-family: 'Gloria-Hallelujah';
+}
+
+li:not(:last-child) {
+	border-bottom: 1px solid lightblue;
+}
+
+li:first-child {
+	margin-top: 1rem;
+}
+
+li:last-child {
+	margin-bottom: 1rem;
+}
+
+::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n)::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.5 12.5c-.4-1.1-1.3-1.8-2.2-2-4.2-4-11.6-4.3-17.1-4.1-6.9.3-13.9 2.1-19.4 6.5C2 17.5-2.4 25.7 2.5 32.6c2.2 3.2 5.5 4.9 9 5.5 3.3 1.7 6.7 3.3 10.2 4.4 7.8 2.3 17 1.6 23.2-4.3 7.3-7 4.8-17.3 1.6-25.7zm-20.2 2.7c.6 0 1.3 0 1.8.2 1.1.4 1.7 1.3 2 2.3-1-1.2-2.4-2.1-3.8-2.5zm-1.4 6.6c.9.9 1.3 2.2-.2 2.3-2 .2-1.1-1.9.2-2.3zm-11.8 9.8c-.6-.3-2.9-1.1-3.2-1.8-.2-.5 1.4-3.1 2.1-4.2.3.5.7 1 1.2 1.4 0 .3.1.6.2.8.5 1.9 1.5 3.1 2.9 4h-.2c-.8.1-1.6.1-2.5-.1-.2 0-.3 0-.5-.1zM24 36.4c1.6-.7 3-1.5 4.3-2.5.8.2 1.7.3 2.5.5 2.5.4 5.2.9 7.7.6-.9.6-2 1.1-3 1.4-3.9 1.3-7.7 1-11.5 0z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n - 1)::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
+}
+/*li*/
+/*spinner*/
+.pencil {
+	display: block;
+	width: 10em;
+	height: 10em;
+}
+.pencil__body1,
+.pencil__body2,
+.pencil__body3,
+.pencil__eraser,
+.pencil__eraser-skew,
+.pencil__point,
+.pencil__rotate,
+.pencil__stroke {
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.pencil__body1,
+.pencil__body2,
+.pencil__body3 {
+	transform: rotate(-90deg);
+}
+.pencil__body1 {
+	animation-name: pencilBody1;
+}
+.pencil__body2 {
+	animation-name: pencilBody2;
+}
+.pencil__body3 {
+	animation-name: pencilBody3;
+}
+.pencil__eraser {
+	animation-name: pencilEraser;
+	transform: rotate(-90deg) translate(49px,0);
+}
+.pencil__eraser-skew {
+	animation-name: pencilEraserSkew;
+	animation-timing-function: ease-in-out;
+}
+.pencil__point {
+	animation-name: pencilPoint;
+	transform: rotate(-90deg) translate(49px,-30px);
+}
+.pencil__rotate {
+	animation-name: pencilRotate;
+}
+.pencil__stroke {
+	animation-name: pencilStroke;
+	transform: translate(100px,100px) rotate(-113deg);
+}
+
+/* Animations */
+@keyframes pencilBody1 {
+	from,
+	to {
+		stroke-dashoffset: 351.86;
+		transform: rotate(-90deg);
+	}
+	50% {
+		stroke-dashoffset: 150.8; /* 3/8 of diameter */
+		transform: rotate(-225deg);
+	}
+}
+@keyframes pencilBody2 {
+	from,
+	to {
+		stroke-dashoffset: 406.84;
+		transform: rotate(-90deg);
+	}
+	50% {
+		stroke-dashoffset: 174.36;
+		transform: rotate(-225deg);
+	}
+}
+@keyframes pencilBody3 {
+	from,
+	to {
+		stroke-dashoffset: 296.88;
+		transform: rotate(-90deg);
+	}
+	50% {
+		stroke-dashoffset: 127.23;
+		transform: rotate(-225deg);
+	}
+}
+@keyframes pencilEraser {
+	from,
+	to {
+		transform: rotate(-45deg) translate(49px,0);
+	}
+	50% {
+		transform: rotate(0deg) translate(49px,0);
+	}
+}
+@keyframes pencilEraserSkew {
+	from,
+	32.5%,
+	67.5%,
+	to {
+		transform: skewX(0);
+	}
+	35%,
+	65% {
+		transform: skewX(-4deg);
+	}
+	37.5%, 
+	62.5% {
+		transform: skewX(8deg);
+	}
+	40%,
+	45%,
+	50%,
+	55%,
+	60% {
+		transform: skewX(-15deg);
+	}
+	42.5%,
+	47.5%,
+	52.5%,
+	57.5% {
+		transform: skewX(15deg);
+	}
+}
+@keyframes pencilPoint {
+	from,
+	to {
+		transform: rotate(-90deg) translate(49px,-30px);
+	}
+	50% {
+		transform: rotate(-225deg) translate(49px,-30px);
+	}
+}
+@keyframes pencilRotate {
+	from {
+		transform: translate(100px,100px) rotate(0);
+	}
+	to {
+		transform: translate(100px,100px) rotate(720deg);
+	}
+}
+@keyframes pencilStroke {
+	from {
+		stroke-dashoffset: 439.82;
+		transform: translate(100px,100px) rotate(-113deg);
+	}
+	50% {
+		stroke-dashoffset: 164.93;
+		transform: translate(100px,100px) rotate(-113deg);
+	}
+	75%,
+	to {
+		stroke-dashoffset: 439.82;
+		transform: translate(100px,100px) rotate(112deg);
+	}
+}
